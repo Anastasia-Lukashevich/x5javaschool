@@ -1,4 +1,4 @@
-package app;
+package homework1;
 
 public class Main {
 

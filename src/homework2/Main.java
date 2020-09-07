@@ -30,7 +30,10 @@ public class Main {
         System.out.println(describeNum(scanner.nextInt()));
         // Задание 7
         System.out.println("Задание 7. Введите код города:");
-        System.out.println(minutePrice(scanner.nextInt()));
+        int code = scanner.nextInt();
+        System.out.println("Введите количество минут:");
+        int min = scanner.nextInt();
+        System.out.println(minutePrice(code, min));
         // Задание 8
         System.out.println("Задание 8. Работа с массивом");
         calcArray();
@@ -47,7 +50,12 @@ public class Main {
     }
 
     public static int getNumSum(int num) {
-        return num / 100 + (num / 10) % 10 + num % 10;
+        int sum = 0;
+        while (num != 0) {
+            sum += (num % 10);
+            num /= 10;
+        }
+        return sum;
     }
 
     public static int countPositiveNum(int num) {
@@ -75,33 +83,52 @@ public class Main {
     }
 
     public static String describeNum(int num) {
-        String message = "";
-        if (num > 0) {
-            message += "Положительное";
+//        String message = "";
+//        if (num > 0) {
+//            message += "Положительное";
+//        }
+//        if (num == 0) {
+//            return "Нулевое число";
+//        }
+//        if (num < 0) {
+//            message += "Отрицательное";
+//        }
+//        if (num % 2 == 0) {
+//            return message + " четное число";
+//        }
+//        return message + " нечетное число";
+
+        if (num >= 0) {
+            if (num == 0) {
+                return "Нулевое число";
+            } else {
+                if (num % 2 == 0) {
+                    return "Положительное четное число";
+                } else {
+                    return "Положительное нечетное число";
+                }
+            }
+        } else {
+            if (num % 2 == 0) {
+                return "Отрицательное четное число";
+            } else {
+                return "Отрицательное нечетное число";
+            }
         }
-        if (num == 0) {
-            return "Нулевое число";
-        }
-        if (num < 0) {
-            message += "Отрицательное";
-        }
-        if (num % 2 == 0) {
-            return message + " четное число";
-        }
-        return message + " нечетное число";
+
     }
 
-    public static String minutePrice(int countryCode) {
+    public static String minutePrice(int countryCode, int min) {
         double moscowPrice = 4.15;
         double rostovPrice = 1.98;
         double krasnodarPrice = 2.69;
         double kirovPrice = 5.00;
 
         return switch (countryCode) {
-            case 905 -> "Москва. Стоимость разговора: " + moscowPrice * 10;
-            case 194 -> "Ростов. Стоимость разговора: " + rostovPrice * 10;
-            case 491 -> "Краснодар. Стоимость разговора: " + krasnodarPrice * 10;
-            case 800 -> "Киров. Стоимость разговора: " + kirovPrice * 10;
+            case 905 -> "Москва. Стоимость разговора: " + moscowPrice * min;
+            case 194 -> "Ростов. Стоимость разговора: " + rostovPrice * min;
+            case 491 -> "Краснодар. Стоимость разговора: " + krasnodarPrice * min;
+            case 800 -> "Киров. Стоимость разговора: " + kirovPrice * min;
             default -> "Введен неизвестный код города!";
         };
     }

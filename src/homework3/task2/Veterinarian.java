@@ -1,10 +1,10 @@
-package homework3;
+package homework3.task2;
 
 public class Veterinarian {
-    int experience;
-    String name;
+    private final int experience;
+    private final String name;
 
-    Veterinarian(String name, int experience) {
+    public Veterinarian(String name, int experience) {
         this.name = name;
         this.experience = experience;
     }

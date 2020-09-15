@@ -1,4 +1,4 @@
-package homework4;
+package homework4.task2;
 
 public class SportCar extends Car {
     private final int maxSpeed;

@@ -1,4 +1,4 @@
-package homework4;
+package homework4.task2;
 
 public class Lorry extends Car {
     private final int liftingCapacity;

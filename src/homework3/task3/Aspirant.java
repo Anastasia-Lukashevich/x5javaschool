@@ -1,4 +1,4 @@
-package homework3;
+package homework3.task3;
 
 public class Aspirant extends Student {
     private String scientificWork;

@@ -1,9 +1,9 @@
-package homework3;
+package homework3.task2;
 
 public class Dog extends Animal {
     private final String name;
 
-    Dog(String name, String food, String location) {
+    public Dog(String name, String food, String location) {
         super(food, location);
         this.name = name;
     }

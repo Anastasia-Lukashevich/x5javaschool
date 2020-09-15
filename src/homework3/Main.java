@@ -1,5 +1,10 @@
 package homework3;
 
+import homework3.task1.Phone;
+import homework3.task2.*;
+import homework3.task3.Aspirant;
+import homework3.task3.Student;
+
 public class Main {
     public static void main(String[] args) {
         //Задание 1
@@ -39,7 +44,7 @@ public class Main {
 
         Student[] students = new Student[]{maks, sasha, lena, lesha, kate};
         for (Student student : students) {
-            System.out.println(student.getLastName() + " " + student.getFirstName() + ": стипендия равна " + student.getScholarship(student.averageMark));
+            System.out.println(student.getLastName() + " " + student.getFirstName() + ": стипендия равна " + student.getScholarship(student.getAverageMark()));
         }
 
     }

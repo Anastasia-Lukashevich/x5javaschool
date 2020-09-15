@@ -1,4 +1,4 @@
-package homework4;
+package homework4.task1;
 
 public class Circle implements Shape {
     private static final double PI = 3.14;

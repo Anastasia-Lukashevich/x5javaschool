@@ -1,5 +1,14 @@
 package homework4;
 
+import homework4.task1.Circle;
+import homework4.task1.Rectangle;
+import homework4.task1.Shape;
+import homework4.task1.Triangle;
+import homework4.task2.Car;
+import homework4.task2.Engine;
+import homework4.task2.Lorry;
+import homework4.task2.SportCar;
+
 public class Main {
     public static void main(String[] args) {
         //Задание 1

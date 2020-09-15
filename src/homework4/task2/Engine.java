@@ -1,8 +1,8 @@
-package homework4;
+package homework4.task2;
 
 public class Engine {
-    String fabricator;
-    int capacity;
+    private final String fabricator;
+    private final int capacity;
 
     public Engine(String fabricator, int capacity) {
         this.fabricator = fabricator;

@@ -1,21 +1,21 @@
-package homework3;
+package homework3.task1;
 
 public class Phone {
     private String number;
     private String model;
     private double weight;
 
-    Phone(String number, String model, double weight) {
+    public Phone(String number, String model, double weight) {
         this(number, model);
         this.weight = weight;
     }
 
-    Phone(String number, String model) {
+    public Phone(String number, String model) {
         this.number = number;
         this.model = model;
     }
 
-    Phone() {
+    public Phone() {
 
     }
 

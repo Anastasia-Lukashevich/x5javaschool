@@ -1,10 +1,10 @@
-package homework3;
+package homework3.task2;
 
 public class Horse extends Animal {
     private final String name;
     private final boolean shod;
 
-    Horse(String name, String food, String location, boolean shod) {
+    public Horse(String name, String food, String location, boolean shod) {
         super(food, location);
         this.name = name;
         this.shod = shod;

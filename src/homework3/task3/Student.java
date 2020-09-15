@@ -1,10 +1,10 @@
-package homework3;
+package homework3.task3;
 
 public class Student {
-    protected String firstName;
-    protected String lastName;
-    protected String group;
-    protected double averageMark;
+    private String firstName;
+    private String lastName;
+    private String group;
+    private double averageMark;
 
     public Student(String firstName, String lastName, String group, double averageMark) {
         this.firstName = firstName;
@@ -27,5 +27,9 @@ public class Student {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public double getAverageMark() {
+        return averageMark;
     }
 }

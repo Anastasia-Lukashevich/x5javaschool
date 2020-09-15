@@ -1,4 +1,4 @@
-package homework4;
+package homework4.task2;
 
 public abstract class Car {
     protected final String brand;

@@ -2,7 +2,7 @@ package homework3.task2;
 
 public class Animal {
     protected String food;
-    protected String location;
+    private String location;
 
     public Animal(String food, String location) {
         this.food = food;

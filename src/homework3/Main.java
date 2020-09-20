@@ -44,7 +44,7 @@ public class Main {
 
         Student[] students = new Student[]{maks, sasha, lena, lesha, kate};
         for (Student student : students) {
-            System.out.println(student.getLastName() + " " + student.getFirstName() + ": стипендия равна " + student.getScholarship(student.getAverageMark()));
+            System.out.println(student.getLastName() + " " + student.getFirstName() + ": стипендия равна " + student.getScholarship());
         }
 
     }

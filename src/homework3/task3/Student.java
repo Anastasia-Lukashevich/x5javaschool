@@ -4,7 +4,7 @@ public class Student {
     private String firstName;
     private String lastName;
     private String group;
-    private double averageMark;
+    protected double averageMark;
 
     public Student(String firstName, String lastName, String group, double averageMark) {
         this.firstName = firstName;
@@ -13,8 +13,8 @@ public class Student {
         this.averageMark = averageMark;
     }
 
-    public int getScholarship(double averageMark) {
-        if (averageMark == 5) {
+    public int getScholarship() {
+        if (this.averageMark == 5) {
             return 100;
         } else {
             return 80;

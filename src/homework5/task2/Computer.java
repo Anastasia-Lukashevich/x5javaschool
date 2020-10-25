@@ -2,12 +2,12 @@ package homework5.task2;
 
 public class Computer {
     private final Cpu cpu;
-    private final Ram ram;
+    private final RamFactory ram;
     private final GraphicsCard graphicsCard;
     private final Monitor monitor;
     private final StorageDevice storageDevice;
 
-    public Computer(Cpu cpu, Ram ram, GraphicsCard graphicsCard, Monitor monitor, StorageDevice storageDevice) {
+    public Computer(Cpu cpu, RamFactory ram, GraphicsCard graphicsCard, Monitor monitor, StorageDevice storageDevice) {
         this.cpu = cpu;
         this.ram = ram;
         this.graphicsCard = graphicsCard;
@@ -19,7 +19,7 @@ public class Computer {
         return cpu;
     }
 
-    public Ram getRam() {
+    public RamFactory getRam() {
         return ram;
     }
 
